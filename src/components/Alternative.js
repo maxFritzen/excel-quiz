@@ -1,8 +1,13 @@
 import React from 'react';
 
 const Alternative = (props) => (
-  <div>
-    Alternative: <button onClick={() => props.storeAnswer(props.alternative)}>{props.alternative}</button>
+  <div className="alternative">
+    <button
+
+      onClick={() => props.handleClick(props.alternative)}
+      >
+      {props.alternative}
+    </button>
   </div>
 );
 

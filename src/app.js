@@ -62,9 +62,7 @@ import Game from './components/Game';
 
 
 const App = () => (
-  <div>
-    <p>quiz</p>
-
+  <div className="content-container">
     <Game />
   </div>
 );

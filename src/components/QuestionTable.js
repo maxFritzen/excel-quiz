@@ -4,17 +4,21 @@ import Alternative from './Alternative';
 import Question from './Question';
 
 const QuestionTable = (props) => (
-  <div>
-     QuestionTable
+  <div className="question-table">
      <Question question={props.question}/>
-     <Alternative
-       alternative={props.alternatives[0]}
-       storeAnswer={props.storeAnswer}
-     />
-     <Alternative
-       alternative={props.alternatives[1]}
-       storeAnswer={props.storeAnswer}
-     />
+     <div className="question-list">
+       <Alternative
+         alternative={props.alternatives[0]}
+         storeAnswer={props.storeAnswer}
+         handleClick={props.handleClick}
+       />
+       <Alternative
+         alternative={props.alternatives[1]}
+         storeAnswer={props.storeAnswer}
+         handleClick={props.handleClick}
+       />
+     </div>
+
   </div>
 );
 

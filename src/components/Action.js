@@ -1,9 +1,13 @@
 import React from 'react';
 
 const Action = (props) => (
-  <div>
-     Action:
-     <button onClick={props.handleClick}>Nästa fråga</button>
+  <div className="action">
+     <button
+       className={props.className}
+       disabled={props.disabled}
+       onClick={props.handleClick}
+       >Starta quiz!
+     </button>
   </div>
 );
 
